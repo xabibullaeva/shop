@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <title>IphoneShop</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header_top">
+                    <div class="header_left">
+                        <p class="header_text">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+                        <a href="#" class="header_link">ShopNow</a>
+                    </div>
+                    <div class="header_right">
+                        <a href="#" class="header_text">English</a>
+                        <a href="#" class="header_icon">
+                            <img src="./images/vector.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="navigator">
+            <div class="nav">
+                <div class="container">
+                    <div class="nav_box">
+                        <a href="" class="nav_text">Exclusive</a>
+                        <ul class="nav_list">
+                            <li><a href="#" class="nav_link">Home</a></li>
+                            <li><a href="#" class="nav_link">Contact</a></li>
+                            <li><a href="#" class="nav_link">About</a></li>
+                            <li><a href="#" class="nav_link">Sign Up</a></li>
+                        </ul>
+                    <div class="form">
+                        <form action="" class="nav_form">
+                            <input type="text" class="nav_input" placeholder="What are you looking for?" />
+                            <button class="nav_btn" type="submit">
+                                <img src="./images/search.png" alt="" />
+                            </button>
+                        </form>
+                        <button class="btn">
+                            <img src="./images/heart.png" alt="" />
+                        </button>
+                        <button class="btn">
+                            <img src="./images/shop.png" alt="" />
+                        </button>
+                    </div>        
+    
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </section>
+        <section class="collection">
+            <div class="container">
+                <div class="about_box">
+                    <aside class="collect_left">
+                        <ul class="collect_list">
+                            <li><a href="#" class="collect_link">Woman’s Fashion</a></li>
+                            <li><a href="#" class="collect_link">Men’s Fashion</a></li>
+                            <li><a href="#" class="collect_link">Electronics</a></li>
+                            <li><a href="#" class="collect_link">Home & Lifestyle</a></li>
+                            <li><a href="#" class="collect_link">Medicine</a></li>
+                            <li><a href="#" class="collect_link">Sports & Outdoor</a></li>
+                            <li><a href="#" class="collect_link">Baby’s & Toys</a></li>
+                            <li><a href="#" class="collect_link">Groceries & Pets</a></li>
+                            <li><a href="#" class="collect_link">Health & Beauty</a></li>
+                        </ul>
+                    </aside>
+                    <div class="line2"></div>
+                    <div class="box">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper_left">
+                                        <div class="logo"><img src="./images/logo.png" alt="" /></div>
+                                        <p class="box_text">iPhone 14 Series</p>
+                                        <p class="box_voucher">Up to 10% off Voucher</p>
+                                        <li class="box_list">
+                                            <a href="" class="box_link">Shop Now</a>
+                                            <a href="" class="box_go"><img src="./images/go.png" alt="" /></a>
+                                        </li>
+                                    </div>
+                                    <img src="./images/1.png" alt="" />
+                                </div>
+                                <div class="swiper-slide"><img src="./images/2.png" alt="" /></div>
+                                <div class="swiper-slide"><img src="./images/3.png" alt="" /></div>
+                                <div class="swiper-slide"><img src="./images/4.png" alt="" /></div>
+                                <div class="swiper-slide"><img src="./images/5.png" alt="" /></div>
+                            </div>
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </body>
+</html>
